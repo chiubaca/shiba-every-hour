@@ -1,7 +1,7 @@
 name: Post New Shiba
 on:
   schedule:    
-  - cron: "*/5 * * * *"
+  - cron: "0 * * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
