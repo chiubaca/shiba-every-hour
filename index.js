@@ -6,6 +6,8 @@ if (process.env.NODE_ENV === "development") {
   require("dotenv").config()
 }
 
+console.log("envs", process.env)
+
 const client = new Twitter({
   consumer_key: process.env.CONSUMER_KEY,
   consumer_secret: process.env.CONSUMER_SECRET,
