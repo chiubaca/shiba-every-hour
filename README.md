@@ -1,3 +1,5 @@
+[![Post New Shiba](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe.yml)
+
 <div align="center">
 
 <h1> Shiba Every Hour </h1>
