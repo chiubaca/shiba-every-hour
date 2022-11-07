@@ -60,4 +60,4 @@ All the logic to fetch a Shiba image and post to Twitter is in `./index.js`.
 ![Screenshot of GitHub Secrets with `CONSUMER_KEY`,`CONSUMER_SECRET`, `ACCESS_TOKEN_KEY` and `ACCESS_TOKEN_SECRET`](https://user-images.githubusercontent.com/18376481/90680314-95b73500-e259-11ea-8b06-75067520cefc.PNG)
 
 
-Happy hacking 🤓.    
+Happy hacking 🤓.     
