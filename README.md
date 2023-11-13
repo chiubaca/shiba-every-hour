@@ -18,6 +18,7 @@ I like Shiba's ok?
 
 # But Seriously...
 
+
 There probably is a legit use case somewhere here... You just need to look harder.
 - Perhaps you want to tweet your application service status every hour via a health check API?
 - You could post a tweet every time is a PR is merged into your master branch?
