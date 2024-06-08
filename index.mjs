@@ -1,9 +1,7 @@
-const { TwitterApi } = require("twitter-api-v2");
-const fetch = require("node-fetch");
+import { TwitterApi } from "twitter-api-v2";
+import fetch from "node-fetch";
 
-if (process.env.NODE_ENV === "development") {
-  require("dotenv").config();
-}
+import 'dotenv/config'
 
 const twitterClient = new TwitterApi({
   appKey: process.env.API_KEY,
@@ -22,12 +20,17 @@ async function uploadMediaToTwitter(imageData) {
 async function main() {
   try {
     const resp = await fetch(
-      "http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true"
+      `https://shibes.lol/api/random?&CLIENT_SECRET=${process.env.SHIBE_LOL_CLIENT_SECRET}`
     );
 
     const json = await resp.json();
 
-    const imageUrl = json[0];
+    if (typeof json !== "object") {
+      console.error("JSON was not an object", json);
+      throw new Error("JSON was not an object");
+    }
+
+    const imageUrl = json.img;
 
     const imgResp = await fetch(imageUrl);
 
@@ -40,7 +43,8 @@ async function main() {
     });
     console.log("New shibe successfully posted!", tweet);
   } catch (error) {
-    console.warn("There was a problem posting to shibe bot", error);
+    console.error("There was a problem posting to shibe bot", error);
+    throw new Error("Uncaught error posting shibe");
   }
 }
 

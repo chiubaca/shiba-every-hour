@@ -4,10 +4,8 @@
   "description": "GitHub Action to power @ShibaEveryHour",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint index.js",
-    "shibe": "node index.js",
-    "dev-shibe": "env NODE_ENV=development node index.js"
+    "lint": "eslint index.mjs",
+    "shibe": "node index.mjs"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
