@@ -1,4 +1,4 @@
-[![Post New Shiba](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe.yml)
+[![Post Shiba To Twitter/X Hourly](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-twitter.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-twitter.yml)
 
 <div align="center">
 
