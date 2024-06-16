@@ -9,7 +9,7 @@ const twitterClient = new TwitterApi({
 
 export const uploadToTwitter = async (imgBuffer) => {
   try {
-    const mediaKey = await twitterClient.v2.uploadMedia(imgBuffer, {
+    const mediaKey = await twitterClient.v1.uploadMedia(imgBuffer, {
       mimeType: "jpg",
     });
 
