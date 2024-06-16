@@ -1,23 +1,16 @@
 {
   "name": "shiba-every-hour",
   "version": "1.0.0",
-  "description": "GitHub Action to power @ShibaEveryHour",
-  "main": "index.js",
+  "description": "GitHub Actions to power shiba every hour bots",
+  "main": "index.mjs",
   "scripts": {
-    "lint": "eslint index.mjs",
-    "shibe": "node index.mjs"
+    "post-shibe:twitter": "node --env-file=.env ./src/main.mjs --site=twitter"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.0",
-    "request": "^2.88.2",
-    "twitter-api-sdk": "^1.2.1",
     "twitter-api-v2": "^1.15.0"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "@biomejs/biome": "1.8.1"
   },
   "repository": {
     "type": "git",
@@ -28,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/chiubaca/shiba-every-hour/issues"
   },
-  "homepage": "https://github.com/chiubaca/shiba-every-hour#readme"
+  "homepage": "https://github.com/chiubaca/shiba-every-hour#readme",
+  "volta": {
+    "node": "20.11.1"
+  }
 }
