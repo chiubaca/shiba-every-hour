@@ -1,4 +1,4 @@
-name: Post New Shibe To Twitter/X
+name: Post Shiba To Twitter/X Hourly
 on:
   schedule:
     - cron: "0 * * * *"
