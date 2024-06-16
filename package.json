@@ -4,7 +4,8 @@
   "description": "GitHub Actions to power shiba every hour bots",
   "main": "index.mjs",
   "scripts": {
-    "post-shibe:twitter": "node --env-file=.env ./src/main.mjs --site=twitter"
+    "post-shibe:twitter": "node ./src/main.mjs --site=twitter",
+    "post-shibe:dev:twitter": "node --env-file=.env ./src/main.mjs --site=twitter"
   },
   "dependencies": {
     "twitter-api-v2": "^1.15.0"
