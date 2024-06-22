@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "post-shibe:twitter": "node ./src/main.mjs --site=twitter",
-    "post-shibe:mastodon": "node --env-file=.env ./src/main.mjs --site=mastodon",
+    "post-shibe:mastodon": "node ./src/main.mjs --site=mastodon",
     "dev:post-shibe:twitter": "node --env-file=.env ./src/main.mjs --site=twitter",
     "dev:post-shibe:mastodon": "node --env-file=.env ./src/main.mjs --site=mastodon"
   },
