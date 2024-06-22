@@ -1,11 +1,11 @@
 import { createRestAPIClient } from "masto";
 
-const masto = createRestAPIClient({
-  url: "https://mas.to",
-  accessToken: process.env.MASTODON_ACCESS_TOKEN_KEY,
-});
-
 export const uploadToMastodon = async (imageUrl) => {
+  const masto = createRestAPIClient({
+    url: "https://mas.to",
+    accessToken: process.env.MASTODON_ACCESS_TOKEN_KEY,
+  });
+
   try {
     const imageResp = await fetch(imageUrl);
     const imageBlob = await imageResp.blob();
