@@ -8,13 +8,10 @@
   
   <p>wow</p>
 
-
-|    site    |      status    |
-|------------|----------------|
-| X(Twitter) | [![Post Shiba To Twitter/X Hourly](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-twitter.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-twitter.yml) |
-| Mastodon   | [![Post Shiba To Mastodon Hourly](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-mastodon.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-mastodon.yml) |
-| Bluesky    | coming soon... |
+| site                                                                              | status                                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [x.com/ShibaEveryHour](https://x.com/ShibaEveryHour)                              | [![Post Shiba To Twitter/X Hourly](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-twitter.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-twitter.yml)  |
+| [mas.to/@ShibaEveryHour](https://mas.to/@ShibaEveryHour)                          | [![Post Shiba To Mastodon Hourly](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-mastodon.yml/badge.svg)](https://github.com/chiubaca/shiba-every-hour/actions/workflows/post-shibe-mastodon.yml) |
+| [shibaeveryhour.bsky.social](https://bsky.app/profile/shibaeveryhour.bsky.social) | coming soon...                                                                                                                                                                                                               |
 
 </div>
-
-
