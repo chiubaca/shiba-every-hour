@@ -16,5 +16,5 @@ jobs:
       - run: npm install
       - run: npm run post-shibe:mastodon
         env:
-          TWITTER_API_KEY: ${{ secrets.MASTODON_ACCESS_TOKEN_KEY }}
+          MASTODON_ACCESS_TOKEN_KEY: ${{ secrets.MASTODON_ACCESS_TOKEN_KEY }}
           SHIBE_LOL_CLIENT_SECRET: ${{ secrets.SHIBE_LOL_CLIENT_SECRET }}
