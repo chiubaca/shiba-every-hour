@@ -1,6 +1,8 @@
 import { parseArgs } from "node:util";
-import { uploadToTwitter } from "./uploadToTwitter.mjs";
+
 import { fetchRandomShibe } from "./fetchRandomShibe.mjs";
+import { uploadToTwitter } from "./uploadToTwitter.mjs";
+import { uploadToMastodon } from "./uploadToMastodon.mjs";
 
 const { values } = parseArgs({
   options: {
@@ -13,22 +15,23 @@ const { values } = parseArgs({
 
 const SITE = values.site;
 
-if (SITE !== "twitter") {
-  throw new Error("invalid site");
-}
-
 async function main() {
   try {
-    const imageBuffer = await fetchRandomShibe();
+    const imageUrl = await fetchRandomShibe();
 
     switch (SITE) {
       case "twitter":
         console.log("posting to twitter...");
-        uploadToTwitter(imageBuffer);
+        uploadToTwitter(imageUrl);
+        break;
+
+      case "mastodon":
+        console.log("posting to mastodon...");
+        uploadToMastodon(imageUrl);
         break;
 
       default:
-        console.warn(`posting to ${site} is not implemented yet`);
+        console.warn(`Posting to ${site} is not implemented yet`);
         break;
     }
   } catch (error) {

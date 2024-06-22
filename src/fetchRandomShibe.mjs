@@ -12,11 +12,7 @@ export const fetchRandomShibe = async () => {
 
     const imageUrl = json.img;
 
-    const imageResp = await fetch(imageUrl);
-
-    const imageBuffer = Buffer.from(await imageResp.arrayBuffer());
-
-    return imageBuffer;
+    return imageUrl;
   } catch (error) {
     throw new Error("Error getting image from shibe.lol", error);
   }
