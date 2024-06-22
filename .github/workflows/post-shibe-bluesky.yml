@@ -18,3 +18,4 @@ jobs:
         env:
           BLUESKY_USERNAME: ${{ secrets.BLUESKY_USERNAME }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+          SHIBE_LOL_CLIENT_SECRET: ${{ secrets.SHIBE_LOL_CLIENT_SECRET }}
