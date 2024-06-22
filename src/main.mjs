@@ -37,12 +37,12 @@ async function main() {
         break;
 
       default:
-        console.warn(`Posting to ${site} is not implemented yet`);
+        console.warn(`Posting to ${SITE} is not implemented yet`);
         break;
     }
   } catch (error) {
-    console.error(`Uncaught error posting shibe to ${site}`, error);
-    throw new Error(`Uncaught error posting shibe to ${site}`, error);
+    console.error(`Uncaught error posting shibe to ${SITE}`, error);
+    throw new Error(`Uncaught error posting shibe to ${SITE}`, error);
   }
 }
 
