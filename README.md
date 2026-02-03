@@ -1,3 +1,5 @@
+> After 7 years of running this on GitHub Actions. I have now ported all of these scripts to be run as part of the shibes.lol cloudflare stack. No more kicking this action every 2 months to keep it going. Thank you Github Actions.
+
 <div align="center">
 
 <h1> Shiba Every Hour </h1>
